@@ -42,5 +42,29 @@ function updateTile(tile, num) {
     }
 }
 
+document.addEventListener("keyup", (e) => {
+    if(e.code == "Arrowleft") {
+        slideLeft();
+    }
+})
+
+function filterZero() {
+    return row.filter(num => num != 0)
+}
+
+function slide() {
+    row = filterZero(row);
+}
+
+function slideLeft() {
+    for(let r = 0; r < rows; r++) {
+        let row = board[r];
+        row = slide(row);
+        board[r] = row;
+    }
+}
+
+
+
 
 //https://www.youtube.com/watch?v=XM2n1gu4530
