@@ -48,12 +48,26 @@ document.addEventListener("keyup", (e) => {
     }
 })
 
-function filterZero() {
+function filterZero(row) {
     return row.filter(num => num != 0)
 }
 
-function slide() {
+function slide(row) {
     row = filterZero(row);
+
+    for(let i = 0; i < row.length; i++) {
+        if(row[i] == row[i+1]) {
+            row[i] *= 2;
+            row[i+1] = 0;
+            score += row[i];
+        }
+    }
+    row = filterZero(row);
+
+    while(row.length < columns) {
+        row.push(0);
+    }
+    return row;
 }
 
 function slideLeft() {
@@ -61,6 +75,12 @@ function slideLeft() {
         let row = board[r];
         row = slide(row);
         board[r] = row;
+
+        for(let c = 0; c < columns; c++) {
+            let tile = document.getElementById(r.toString() + "-" + c.toString());
+            let num = board[r][c];
+            updateTile(tile, num);
+        }
     }
 }
 
