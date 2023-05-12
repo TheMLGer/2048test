@@ -12,6 +12,7 @@ hr {
 
     background-color: #cdc1b5;
     border: 6px solid #bbada0;
+    border-radius: 3px;
 
     margin: 0 auto;
     display: flex;
