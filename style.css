@@ -1,9 +1,10 @@
 body {
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 hr {
-    width: 500px;
+    width: 800px;
 }
 
 #board {
