@@ -37,11 +37,13 @@ hr {
 .x2 {
     background-color: #eee4da;
     color: #727371;
+    border-radius: 5px;
 }
 
 .x4 {
     background-color: #ece0ca;
     color: #727371;
+    border-radius: 5px;
 }
 
 .x8 {
