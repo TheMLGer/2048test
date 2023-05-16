@@ -200,8 +200,6 @@ function hasEmptyTile() {
 
 const botbtn = document.getElementById("#bot");
 
-botbtn.addEventListener("click", bot); 
-
-function bot() {
-    console.log("an");
-}
+botbtn.addEventListener("click", function() {
+    botbtn.innerText = "stop bot";
+}); 
