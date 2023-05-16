@@ -197,3 +197,11 @@ function hasEmptyTile() {
     }
     return false;
 }
+
+const botbtn = document.getElementById("#bot");
+
+botbtn.addEventListener("click", bot); 
+
+function bot() {
+    console.log("an");
+}
