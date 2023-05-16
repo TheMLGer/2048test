@@ -205,25 +205,25 @@ if(botworking === false) {
     botbtn.addEventListener("click", function() {
         botworking = true;
         botbtn.innerText = "stop bot";
-        
-        for(let i; i < 100; i++) {
-            let x = Math.floor(Math.random() * 4);
-            console.log(x);
 
             switch(Math.floor(Math.random() * 4)) {
                 case 0:
+                    console.log("hallo");
                     break;
 
                 case 1:
+                    console.log("halloo");
                     break;
                 
                 case 2:
+                    console.log("hallooo");
                     break;
 
                 case 3:
+                    console.log("halloooo");
                 
             }
-        }
+        
     
     }); 
 }   else {
