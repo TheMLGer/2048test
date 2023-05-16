@@ -206,7 +206,7 @@ if(botworking === false) {
         botworking = true;
         botbtn.innerText = "stop bot";
         
-        for(let i; i++;) {
+        for(let i; i < 100; i++) {
             let x = Math.floor(Math.random() * 4);
             console.log(x);
 
