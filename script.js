@@ -206,28 +206,38 @@ if(botworking === false) {
         botworking = true;
         botbtn.innerText = "stop bot";
 
+        for(let i; i < 50; i++) {
+
             switch(Math.floor(Math.random() * 4)) {
                 case 0:
                     console.log("hallo");
                     slideDown();
+                    setTwo();
+                    document.getElementById("score").innerText = score;
                     break;
 
                 case 1:
                     console.log("halloo");
                     slideLeft();
+                    setTwo();
+                    document.getElementById("score").innerText = score;
                     break;
                 
                 case 2:
                     console.log("hallooo");
                     slideRight();
+                    setTwo();
+                    document.getElementById("score").innerText = score;
                     break;
 
                 case 3:
                     console.log("halloooo");
                     slideUp();
+                    setTwo();
+                    document.getElementById("score").innerText = score;
                 
             }
-        
+        }
     
     }); 
 }   else {
