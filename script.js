@@ -199,7 +199,16 @@ function hasEmptyTile() {
 }
 
 const botbtn = document.getElementById("#bot");
+botworking = false;
 
-botbtn.addEventListener("click", function() {
-    botbtn.innerText = "stop bot";
-}); 
+if(botworking === false) {
+    botbtn.addEventListener("click", function() {
+        botworking = true;
+        botbtn.innerText = "stop bot";
+        console.log(botworking);
+    
+    }); 
+}   else {
+    console.log("bot already working");
+}
+
