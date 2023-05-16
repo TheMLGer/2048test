@@ -198,7 +198,7 @@ function hasEmptyTile() {
     return false;
 }
 
-const botbtn = document.getElementById("#bot");
+const botbtn = document.getElementById("bot");
 botworking = false;
 
 if(botworking === false) {
