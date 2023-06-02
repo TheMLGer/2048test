@@ -216,7 +216,7 @@ if(botworking === false) {
                     slideDown();
                     setTwo();
                     document.getElementById("score").innerText = score;
-                    a + 1;
+                    a += 1;
                     break;
 
                 case 1:
@@ -224,7 +224,7 @@ if(botworking === false) {
                     slideLeft();
                     setTwo();
                     document.getElementById("score").innerText = score;
-                    a+1;
+                    a += 1;
                     break;
                 
                 case 2:
@@ -232,7 +232,7 @@ if(botworking === false) {
                     slideRight();
                     setTwo();
                     document.getElementById("score").innerText = score;
-                    a+1;
+                    a += 1;
                     break;
 
                 case 3:
@@ -240,7 +240,7 @@ if(botworking === false) {
                     slideUp();
                     setTwo();
                     document.getElementById("score").innerText = score;
-                    a+1;
+                    a += 1;
                 
             }
         }
