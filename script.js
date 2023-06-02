@@ -206,7 +206,9 @@ if(botworking === false) {
         botworking = true;
         botbtn.innerText = "stop bot";
 
-        for(let i; i < 50; i++) {
+        a = 0;
+
+        while(a < 50) {
 
             switch(Math.floor(Math.random() * 4)) {
                 case 0:
@@ -214,6 +216,7 @@ if(botworking === false) {
                     slideDown();
                     setTwo();
                     document.getElementById("score").innerText = score;
+                    a + 1;
                     break;
 
                 case 1:
@@ -221,6 +224,7 @@ if(botworking === false) {
                     slideLeft();
                     setTwo();
                     document.getElementById("score").innerText = score;
+                    a+1;
                     break;
                 
                 case 2:
@@ -228,6 +232,7 @@ if(botworking === false) {
                     slideRight();
                     setTwo();
                     document.getElementById("score").innerText = score;
+                    a+1;
                     break;
 
                 case 3:
@@ -235,6 +240,7 @@ if(botworking === false) {
                     slideUp();
                     setTwo();
                     document.getElementById("score").innerText = score;
+                    a+1;
                 
             }
         }
